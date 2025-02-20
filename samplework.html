@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<style>
+	body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: black;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    width: 150px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+</style>
+<body>
+	<form>
+		<input type="number" id="num1">
+		<input type="number" id="num2">
+	</form>
+	<script>
+		function product(){
+			var numA=document.getElementById("num1").value;
+			var numB=document.getElementById("num2").value;
+            var prod = numA*numB;
+             window.alert("Remainder is: " + prod)
+		}
+		function exponent(){
+			var numA=document.getElementById("num1").value;
+			var numB=document.getElementById("num2").value;
+            var exp = numA**numB;
+             window.alert("A raise to B: " + exp)
+		}
+		function remainder(){
+			var numA=document.getElementById("num1").value;
+			var numB=document.getElementById("num2").value;
+            var rem = numA%numB;
+             window.alert("Remainder is: " + rem)
+		}
+		function compare(){
+			var numA=document.getElementById("num1").value;
+			var numB=document.getElementById("num2").value;
+            var comp = numA==numB;
+             window.alert("comparison is: " + comp)} 
+	</script>
+
+	<div class="container">
+		<div class="row">
+	 		<div class="col md-6 d-grid">
+			<button onclick="product()">Product of A and B</button>
+	    	</div>
+        
+	 		<div class="col md-6 d-grid">
+			<button onclick="exponent()">A raise to B</button>
+	    	</div>
+        
+	 		<div class="col md-6 d-grid">
+			<button onclick="remainder()">remainder</button>
+	    	</div>
+        
+	 		<div class="col md-6 d-grid">
+			<button onclick="compare()">comparing A to B</button>
+	    	</div>
+        </div>	
+	</div>
+
+</body>
+</html>
